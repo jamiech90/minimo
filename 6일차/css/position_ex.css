@@ -1,0 +1,42 @@
+@import url('common.css');
+
+.pos_ex1 {
+	width: 200px;
+	position: relative;
+	/*	이걸 안넣어주면 전체화면됨*/
+}
+
+.pos_ex1 > img,
+.pos_ex1 ul {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 2;
+}
+
+.pos_ex1 ul {
+	width: 200%;
+	font-size: 0;
+	left: -100%;
+	transition: .5s;
+	z-index: 1;
+}
+
+/*>는 하위자식요소만을 포함. 그러면 ul은 상관이 없는 상황*/
+
+
+.pos_ex1:hover ul {
+	left: 100%;
+
+}
+
+
+.pos_ex1 ul li {
+	display: inline-block;
+	width: 50%;
+}
+
+.pos_ex1 ul img {
+	width: 100%;
+}

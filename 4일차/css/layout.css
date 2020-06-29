@@ -1,0 +1,50 @@
+.layout{}
+
+.layout .contents{
+             float:right;
+             width:74%;
+             min-height:400px;
+             background:#eee;}
+
+
+/*================nav===============    */
+    
+/*    100vw , vh : device의 가로, 높이사이즈를 측정. */
+    html,body{
+            margin:0;
+            height:100%;}
+
+    .layout{height:100%;}
+    .layout .nav  {float:left;
+                   width:20%;
+                   background:#222;
+                   }
+    .layout .nav {height:100%;
+                  padding:40px;
+                  width:calc(20% - 80px);}
+
+    .layout .nav h1{color:#ddd;
+                    padding:40px;}
+    .layout .nav ul{
+                    margin:0; padding:0;
+                    list-style:none;
+                    }    
+    .layout .nav ul li{
+                    border-bottom:1px solid #555;
+                    padding:10px;
+        }
+    .layout .nav ul li a{color:#ddd;
+                         text-decoration:none;
+                         padding:10px 0;
+                         width:100%;
+        display:block;}
+    .layout .nav ul li a:hover{background:#333;}
+
+    .layout .contents{width:calc(75% - 80px);
+              padding:40px;}
+    .contents h2{}
+    .contents ul{margin:0; padding:0;list-style:none;}
+    .contents ul li{width:30%;}
+    .contents ul li img{width:100%; display:inline-block;} 
+
+}

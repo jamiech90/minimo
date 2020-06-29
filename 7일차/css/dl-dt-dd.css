@@ -1,0 +1,42 @@
+@import url('common.css');
+
+
+.dl_1{margin:0;}
+.dl_1 dt,
+.dl_1 dd{margin:0;
+		 display:inline-block;
+		 /*border-bottom:1px solid #000; dl은 그리드가 맞춰지지 않으니까 table로 쓰는경우가 더 많다.. 네이버도 dl보다는ul을 많이씀.*/
+		 }
+.dl_1 dt:after{
+		content:':';
+		padding:0 20px;
+				}
+
+/*====================dl2=================*/
+
+.dl_2{margin:100px 0;}
+.dl_2 dt{
+	/*	font-weight: bold;*/
+	margin-top:50px;
+}
+.dl_2 dd{
+	margin:0;
+}
+.dl_2 dd:before{
+	content:'ㄴ'
+}
+
+.dl_2 dt span{
+	display:inline-block;
+	vertical-align: middle;
+}
+
+.dl_2 dt span:first-of-type {
+	width:100px; height: 50px; overflow:hidden; 
+	border:1px solid #000;
+}
+.dl_2 dt span:first-of-type img{width:100%}
+
+.dl_2 dt span:last-of-type{
+	white-space: pre-line;
+}

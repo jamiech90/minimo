@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--
+*block or inline 차이점
+block
+inline-block 그 문제를 해결하기 위해 나옴. 속성값을 이거로 바꾸면 스타일 제약이 사라짐. 블럭과인라인 합쳐짐
+    -block 
+       스타일 제약 없음, 줄바꿈, 가로 100%
+       콘텐츠 세로 배열
+    -inline 
+       스타일 제약 있음: width, height, margin, padding)
+       가로 사이즈가 콘텐츠의 크기만큼 설정)
+       콘텐츠 가로 배열)
+    -inline-block
+       inline요소와 동일하나 스타일의 제약이 없음
+       
+inline : width나  height문제를 일으킴
+-->
+
+    <style>
+        /*    내용을 포장함.*/
+        div.a {
+            border: 1px solid #f00;
+            width: 600px;
+            text-align: center;
+        }
+
+        div.a h1 {
+            color: #ff0000;
+            text-align: center;
+            border: 1px solid #000;
+            width: 300px;
+
+            /*
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 0;
+            margin-bottom: 0;
+            
+*/
+            margin: 0px;
+            /*            left, right, top, bottom*/
+            margin: 0 auto;
+            /*            top&bottom, left&right*/
+
+            margin: 0 auto 0 auto;
+            /*            12,3,6,9 (top,right,bottom,left)간소화 시키는 방법*/
+
+        }
+
+        div.a p {
+            font-size: 14px;
+            margin-top: 0;
+            margin-bottom: 0;
+            line-height: 1.6;
+        }
+
+        ]
+
+        /*
+        0~9
+        10~16(a~f)
+*/
+        div.a p {
+            text-align: center;
+        }
+
+        div.b h1 {
+            color: darkslategrey;
+            text-align: center;
+            border: 1px solid #1113;
+            width: 300px;
+            margin-left: 0 auto 0 auto;
+        }
+
+        div.b p {
+            text-align: center;
+            font-size 24px;
+            color: aqua;
+        }
+        }
+    </style>
+
+    <div class="a">
+        <h1>HTML</h1>
+        <p>HTML block & inline</p>
+        <p>HTML block & inline</p>
+    </div>
+
+    <div class="b">
+        <h1>HTML</h1>
+        <p>HTML block & inline</p>
+
+
+    </div>
+
+
+
+
+    <hr>
+
+    <style>
+        hr {
+            margin: 100px 0;
+        }
+
+        div.c {
+            border: 1px solid #f00;
+            width: 320px;
+            font-size: 0;
+        }
+
+        div.c img {
+            width: 100px;
+            font-size: 0;
+            margin-right: 10px;
+        }
+
+        /*        div.c img.last {margin-right:0;}*/
+        div.c img:last-of-type {
+            margin-right: 0;
+        }
+
+        }
+    </style>
+
+
+    <!--inline-->
+    <div class="c">
+        <img src="../img/unnamed.jpg">
+        <img src="../img/unnamed.jpg">
+        <img src="../img/unnamed.jpg" class="last">
+    </div>
+
+    <style>
+        .d {}
+
+        .d p {
+            width: 100px;
+            height: 100px;
+            background: #ff0;
+            margin: 100px;
+        }
+
+        .d span {
+            width: 100px;
+            height: 100px;
+            background: #ff0;
+            margin: 100px;
+            border:1px solid #f00;
+            display:inline-block;
+        }
+    </style>
+
+    <div class="d">
+        <p>
+            <a 
+            href="http://naver.com" target="_blank">block</a>
+        </p> 
+        <p>block</p>
+        
+        <span>inline <br> inline </span> 
+        <span>inline <br> inline </span> 
+        <!--    상하마진 없음-->
+
+    </div>
+
+
+
+</body></html>
+
+
+
+

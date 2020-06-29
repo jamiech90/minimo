@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="css/form.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+	<form 
+	name="member" 
+	action="//naver.com" 
+	method="get">
+	
+	<fieldset class="member">
+		<legend>회원정보입력</legend>
+		<ul>
+			
+			<li>
+				<lable for="i">아이디</lable>
+				<input type="text" name="id" id="i">
+				
+			<!--action, method, get & post: 입력하는 곳의 페이지를 action에 입력. 자바스크립트 이용해서 유효값을 판단. 데이터베이스에 넘어가도록 해당 페이지로 넘어감. 유효성검사는 javascript로 가능. get때문에 흔적이 남음. 그러나 계좌정보나 패스워드 등은 유출 우려 때문에 그걸 방지하기 위해 post는 url 흔적이 남지 않음. 넘어가는 정보는 value값인데 "id"로 명시된 놈이 그 값을 갖고 넘어감. text등 여러 타입이 있는데 name값을 소홀히 하지 않고 넣어줘야 함. value값이 없는데 따로 지정 안함. 직접 입력하는 값이 없다면 value값을 직접 만들어주는 경우가 생김. fieldset은 블럭요소-->
+			</li>
+			
+			<li>
+				<lable>패스워드</lable>
+				<input type="password" name="pw">
+			</li>
+			
+			<li>
+				<lable>성별</lable>
+				남<input type="radio" name="gen" value="m" >
+				여<input type="radio" name="gen" value="f" checked>
+			</li>
+			
+			<li>
+				<lable>첨부파일</lable>
+				<input type="file" name="upload">
+			</li>
+			
+			<li>
+				<lable>취미</lable>
+				독서<input type="checkbox" name="habby[]" value="read">
+				게임<input type="checkbox" name="habby[]" value="game">
+				도망<input type="checkbox" name="habby[]" value="run">
+				자전거<input type="checkbox" name="habby[]" value="bicycle">
+				맛집탐방<input type="checkbox" name="habby[]" value="food">
+			</li>
+			
+			<li>
+				<lable>이메일 주소</lable>
+				<input type="text" name="email"> @
+				<select>
+					<option>naver.com</option>
+					<option>gmail.com</option>
+					<option>kakao.com</option>
+					<option>nate.com</option>
+					<option>daum.com</option>
+				</select>
+			</li>
+			
+			<li>
+				<lable>내용</lable>
+				<textarea cols="50" rows="10"></textarea>
+			</li>
+			
+			<li>
+				<input type="submit">	
+			</li>
+		</ul>
+		</fieldset> 
+		
+	</form>
+
+
+</body>
+
+</html>

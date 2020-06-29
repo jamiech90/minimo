@@ -1,0 +1,13 @@
+@import url('common.css');
+
+.pos_fix1{
+    height:3000px;
+    width:50%;
+    position:relative;
+    border:1px solid #000;
+}
+.pos_fix1 a{
+    position:absolute;
+    right:5%;
+    bottom:5%;
+}

@@ -1,0 +1,105 @@
+@import url('common.css');
+
+.pos_absolute {
+	border: 1px solid #f00;
+	position: absolute;
+	/*left,right,top,bottom 위치를 마음대로 조정*/
+	left: calc(50% - 250px);
+	top: calc(50% - 200px);
+				}
+
+.pos_absolute img {}
+
+.pos_absolute p {}
+
+.pos_absolute p a {
+	position: absolute;
+	right: 0;
+	top: 0;
+	}
+
+	/*부모가 포지션값을 가지고 있다면 그 부모가 기준이된다. (브라우저 기준이 아님)*/
+
+.pos_absolute:nth-of-type(1){
+	z-index:1;
+	}
+	/*	더 큰값이 더 먼저 나온다.*/
+.pos_absolute:nth-of-type(2){
+	left:54%; top:200px;
+	z-index:-1;
+	}
+
+
+
+/*relative 엡솔루트랑 똑같은데 박스가 이동할 때 relative박스 자리가 원래 자리라면 그 지정된 자리는 이동이 안되고 가만히 있는 상태에서 내용물만 움직임.*/
+.pos_relative{
+	position: relative;
+	border:1px solid #000;
+	width:500px;
+/*	margin: 0 auto;*/
+
+	
+	
+	}
+.pos_relative img{width:100%
+				  }
+.pos_relative p{
+	position:absolute;
+	background:rgba(255,0,0,0.4); /*불투명하게 만드는*/
+	padding:15px 0;
+	text-align: center;
+	left:0; bottom:0; 
+	width:100%; 
+/*	이미지 위에 올라감. relative는 positiond을 가지고 있기 때문에 브라우져 기준이 아니라 이미지의 영역 안에서 움직이는 상태가 되는것.*/
+}
+
+
+
+.pos_1
+	{
+	width:1000px; 
+	margin:500px auto 0 auto;
+	
+	}
+.pos_1 ul{
+	border:1px solid #f00;
+	
+}
+.pos_1 ul:after
+  {	content:'';
+	display:block;
+	clear:both;
+	
+	}
+.pos_1 ul li:nth-of-type(3){margin-right:0;}
+
+.pos_1 ul li{
+			position:relative;
+			width:30%;
+			float:left;
+			overflow: hidden;
+			margin-right: 5%;
+			}
+.pos_1 ul li img{width:100%;
+			     vertical-align: top;}
+.pos_1 ul li p{
+		position:absolute;
+		left:0; bottom:-70px;
+		background:rgba(255,0,0,0.6);
+		color:#fff;
+		width:100%;
+	
+		height:60px;
+		line-height: 60px;
+/*		padding:15px 0;*/
+		text-align: center;
+		transition:.5s;
+}
+
+.pos_1 ul li:hover p{
+	bottom:0;
+	
+}
+
+
+
