@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,300&display=swap');
+/*font-family: 'Noto Serif KR', serif;*/
+/*font-family: 'Ubuntu', sans-serif;*/
+
+
+html,body{
+/*    background:#dbe5f6;*/
+    margin:0;
+          }
+ul,li{
+    margin:0; 
+    padding:0; 
+    list-style:none;
+      }
+a{
+    color:#555;
+    text-decoration:none;
+ }
+
+a:link{
+    text-decoration: none;
+    display: inline-block;
+    font-size:1rem;
+         color:#b4ad9e;
+       
+         font-family: 'Ubuntu', sans-serif;
+         font-weight: 300;
+         text-transform: uppercase;
+         display:inline-block;
+         color:#b4ad9e;
+}
+
+
+a:hover{
+    text-decoration: underline;
+    display: inline-block;
+    color:#333;
+}
+
+a:visited{
+    color:#b4ad9e;
+}
+
+
+h1,h2,h3,h4,h5,h6,p{
+    margin:0;
+ 
+    }
+
+.wC{width:1060px;
+    margin: 0 auto;}
+
+.mt130{
+    margin-top:130px !important;
+}
+
+
+.mt80{
+    margin-top:80px !important;
+}
+
+
+.mt50{
+    margin-top:50px !important;
+}
+
+.mt20{
+    margin-top:20px !important;
+}
+
+
+*{
+    font-size: 14px;
+    color:#626262;
+    line-height: 24px;
+    font-family: 'Noto Serif KR', serif;
+}
+
+h2{font-size:30px;
+    white-space: pre-line;
+    margin-bottom: 34px;
+    font-weight: 400;}
+
+small{font-size:1rem;
+         color:#b4ad9e;
+         line-height: 4;
+         font-family: 'Ubuntu', sans-serif;
+         font-weight: 300;
+         text-transform: uppercase;
+         display:inline-block;}
+
+
+/*======================header==================*/
+
+#header{width:1060px;
+    margin:0 auto;
+    padding:70px 0;
+}
+#header h1{  }
+#header div{
+    }
+}
+
+#header div:after{
+    
+    content:'';
+    clear:both;
+    display:block;
+}
+
+#header div h1{float:left; color:red;}
+
+#header div h1 a{}
+
+#header div h1 a img{}
+
+
+
+
+#header div ul{float:right;}
+
+
+#header div ul li{float:left;}
+
+#header div ul li a{
+     padding:10px 40px;
+     display:inline-block;
+     font-family: 'Noto Serif KR', serif;
+     color:#626262;
+}
+
+#header div ul li.active a{
+    text-decoration: underline;
+}
+/*★★★★★★여기서 한칸 안띄는 이유는 자식이 아니라 해당 li이기 때문에...*★★★★*/
+
+/*=====================footer===============*/
+
+#footer{
+   
+    background:#f0f0f0;
+    padding:40px 0;
+}
+#footer div{
+    width:1060px;
+    margin: 0 auto;
+    position:relative;
+}
+
+#footer div p{
+    position:absolute;
+    right:0;
+    top:0px;
+    }
+
+#footer div p a{
+    
+    width:15px; height: 15px;
+    font-size:0;
+    background:url(../img/ic_sns.png) no-repeat;
+}
+
+#footer div p a:nth-last-of-type(1){
+    background-position:  6px 0;
+    
+}
+
+#footer div p a:nth-last-of-type(2){
+    background-position:  -26px 0;}
+    
+#footer div p a:nth-last-of-type(3){
+    background-position:  -60px 0;
+}
+
+
